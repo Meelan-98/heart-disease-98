@@ -2,8 +2,12 @@
 
 ## Dataset Used
 
-.csv dataset available at https://www.kaggle.com/datasets/aavigan/cleveland-clinic-heart-disease-dataset?select=processed_cleveland.csv
-.data dataset available at https://archive.ics.uci.edu/ml/datasets/Heart+Disease
+```
+    .csv dataset available at https://www.kaggle.com/datasets/aavigan/cleveland-clinic-heart-disease-dataset?select=processed_cleveland.csv
+```
+``` 
+    .data dataset available at https://archive.ics.uci.edu/ml/datasets/Heart+Disease
+```
 
 ### Create the environment
 
