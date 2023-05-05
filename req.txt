@@ -29,6 +29,7 @@ python-dateutil==2.8.2
 pytz==2023.3
 pyzmq==25.0.2
 six==1.16.0
+sklearn==0.0.post4
 stack-data==0.6.2
 tornado==6.3.1
 traitlets==5.9.0

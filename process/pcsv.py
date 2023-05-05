@@ -5,6 +5,8 @@ def preprocess(filename):
     df = pd.read_csv(filename)
     columns = list(df.columns)
 
+    columns.remove("num")
+
     missing_cols = []
 
     for column in columns:
@@ -22,7 +24,7 @@ def preprocess(filename):
 
     df_scaled = df.copy()
 
-    for column in df.columns:
+    for column in columns:
         col_min = df[column].min()
         col_max = df[column].max()
         df_scaled[column] = (df[column] - col_min) / (col_max - col_min)
