@@ -4,6 +4,7 @@ from sklearn.model_selection import KFold
 import xgboost as xgb
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.neighbors import KNeighborsClassifier
+from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 
 def classify(data,classify_type):
@@ -44,6 +45,13 @@ def classify(data,classify_type):
         elif(classify_type=="K-Nearest Neigbour"):
 
             clf = KNeighborsClassifier(n_neighbors=5)
+            clf.fit(train_X, train_y)
+
+            y_pred = clf.predict(test_X)
+
+        elif(classify_type=="Multinomial Logistic Regression"):
+
+            clf = LogisticRegression(multi_class='multinomial', solver='lbfgs',max_iter=500)
             clf.fit(train_X, train_y)
 
             y_pred = clf.predict(test_X)

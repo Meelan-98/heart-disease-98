@@ -10,7 +10,7 @@ preprocessed_data = preprocess('data/cleaveland.csv')
 choice = [
     inquirer.List('option',
                 message="Select a Classification Algorithm :",
-                choices=['XGBoost', 'Naive Bayes', 'K-Nearest Neigbour']
+                choices=['XGBoost', 'Naive Bayes', 'K-Nearest Neigbour','Multinomial Logistic Regression']
                 )
 ]
 
