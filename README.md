@@ -18,7 +18,9 @@
 ### Activate the environment
 
 ```
-    source env/bin/activate
+    mac : source env/bin/activate
+    
+    windows : .\env_name\Scripts\activate
 ```
 
 ### Install the requirements
@@ -27,8 +29,14 @@
     pip3 install -r req.txt
 ```
 
-### Run the pipeline
+### Run the pipeline for classification
 
 ```
     python app.py
+```
+
+### Generate the data profile
+
+```
+    python data-profile.py
 ```
